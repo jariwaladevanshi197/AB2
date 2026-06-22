@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ambition Coal Pvt. Ltd.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="subpage">
+
+<canvas id="c"></canvas>
+
+<div id="overlay">
+  <div class="ov ov-tl">
+    <div class="logo-block"><a href="index.html" style="text-decoration:none;color:inherit">AMBITION<sup>™</sup><br>COAL</a></div>
+    <div class="logo-meta">// Get In Touch</div>
+  </div>
+  <div class="ov ov-tr">
+    <div class="man-head">////// CONTACT</div>
+    <p class="man-body">
+      We respond within 24 hours.<br>
+      Share your requirement<br>
+      and let us configure<br>
+      your supply solution.
+    </p>
+  </div>
+  <div class="ov ov-bl">
+    <button id="soundBtn" class="sound-btn"><span class="sound-icon">◉</span> SOUND: <span id="soundState">OFF</span></button>
+  </div>
+  <div class="ov ov-bc" id="scrollCue">
+    <div class="scroll-cue"><span class="sc-line"></span>SCROLL TO FORM</div>
+  </div>
+  <div class="ov ov-br">
+    <a href="about.html">ABOUT</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="origins.html">ORIGINS</a>
+  </div>
+  <div class="ov ov-prog">
+    <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+    <div class="prog-label" id="progLabel">// 00%</div>
+  </div>
+  <div class="ov ov-phase" id="phaseLabel">TRANSMIT · SIGNAL</div>
+</div>
+
+<nav id="stickyNav">
+  <a href="index.html" class="sn-logo">AMBITION™ COAL</a>
+  <div class="sn-links">
+    <a href="about.html">ABOUT</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="origins.html">ORIGINS</a>
+    <a href="contact.html" class="active">CONTACT</a>
+  </div>
+</nav>
+
+<div id="scroll-body">
+
+  <section class="ss" id="s0"></section>
+
+  <!-- S1: Company info -->
+  <section class="ss" id="s1">
+    <div class="ss-panel ss-left">
+      <div class="ss-tag">// 01 — REACH US</div>
+      <h2 class="ss-title">AMBITION<br><em>COAL PVT. LTD.</em></h2>
+      <div class="svc-block">
+        <div class="sv-row"><span class="sv-k">[CITY]</span><span class="sv-v">Ahmedabad, Gujarat — 380015</span></div>
+        <div class="sv-row"><span class="sv-k">[COUNTRY]</span><span class="sv-v">India</span></div>
+        <div class="sv-row"><span class="sv-k">[EMAIL]</span><span class="sv-v">info@ambitioncoal.com</span></div>
+        <div class="sv-row"><span class="sv-k">[DIRECTOR]</span><span class="sv-v">Mr. Jayesh Mahesh Agrawal</span></div>
+        <div class="sv-row"><span class="sv-k">[CIN]</span><span class="sv-v">U13200GJ2014PTC079892</span></div>
+        <div class="sv-row"><span class="sv-k">[ESTABLISHED]</span><span class="sv-v">2014</span></div>
+      </div>
+      <div class="ss-stats" style="margin-top:28px">
+        <div class="sstat"><div class="ss-n">24h</div><div class="ss-l">RESPONSE</div></div>
+        <div class="sstat"><div class="ss-n">5+</div><div class="ss-l">COMMODITIES</div></div>
+        <div class="sstat"><div class="ss-n">4</div><div class="ss-l">ORIGINS</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S2: Enquiry form -->
+  <section class="ss" id="s2">
+    <div class="ss-panel ss-right">
+      <div class="ss-tag">// 02 — ENQUIRY</div>
+      <h2 class="ss-title">SEND A<br><em>REQUEST</em></h2>
+      <form id="contactForm" class="cf-form">
+        <div class="cf-group">
+          <label class="cf-label">COMPANY NAME</label>
+          <input class="cf-input" type="text" name="company" placeholder="Your company" required>
+        </div>
+        <div class="cf-group">
+          <label class="cf-label">CONTACT PERSON</label>
+          <input class="cf-input" type="text" name="name" placeholder="Full name" required>
+        </div>
+        <div class="cf-group">
+          <label class="cf-label">EMAIL ADDRESS</label>
+          <input class="cf-input" type="email" name="email" placeholder="email@company.com" required>
+        </div>
+        <div class="cf-group">
+          <label class="cf-label">COMMODITY OF INTEREST</label>
+          <select class="cf-input" name="commodity">
+            <option value="">Select a commodity…</option>
+            <option>Steam Coal</option>
+            <option>Coking Coal</option>
+            <option>Manganese Ore</option>
+            <option>Chrome Ore</option>
+            <option>Silica Ore</option>
+            <option>Multiple / Mixed</option>
+          </select>
+        </div>
+        <div class="cf-group">
+          <label class="cf-label">VOLUME (MT/MONTH)</label>
+          <input class="cf-input" type="text" name="volume" placeholder="e.g. 25,000 MT">
+        </div>
+        <div class="cf-group">
+          <label class="cf-label">MESSAGE</label>
+          <textarea class="cf-input cf-textarea" name="message" placeholder="Tell us your requirement — specification, port, payment terms…" rows="4"></textarea>
+        </div>
+        <button class="cf-btn" type="submit">
+          <span class="cf-btn-text">SEND ENQUIRY</span>
+          <span class="cf-btn-arr">→</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="ft-left">
+    <span class="ft-logo">AMBITION™ COAL PVT. LTD.</span>
+    <span class="ft-copy">// Ahmedabad, India · Est. 2014 · © 2025</span>
+    <span class="ft-promo">Promoted by Mr. Jayesh Mahesh Agrawal &amp; Yashika Jayesh Agrawal</span>
+  </div>
+  <div class="ft-right">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="origins.html">ORIGINS</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/utils.js"></script>
+</body>
+</html>

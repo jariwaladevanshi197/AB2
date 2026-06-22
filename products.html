@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — Ambition Coal Pvt. Ltd.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="subpage">
+
+<canvas id="c"></canvas>
+
+<div id="overlay">
+  <div class="ov ov-tl">
+    <div class="logo-block"><a href="index.html" style="text-decoration:none;color:inherit">AMBITION<sup>™</sup><br>COAL</a></div>
+    <div class="logo-meta">// Our Range</div>
+  </div>
+  <div class="ov ov-tr">
+    <div class="man-head">////// PRODUCTS</div>
+    <p class="man-body">
+      Five commodity types.<br>
+      Each sourced from certified<br>
+      origin partners. All tested<br>
+      before dispatch.
+    </p>
+  </div>
+  <div class="ov ov-bl">
+    <button id="soundBtn" class="sound-btn"><span class="sound-icon">◉</span> SOUND: <span id="soundState">OFF</span></button>
+  </div>
+  <div class="ov ov-bc" id="scrollCue">
+    <div class="scroll-cue"><span class="sc-line"></span>SCROLL TO EXPLORE</div>
+  </div>
+  <div class="ov ov-br">
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="origins.html">ORIGINS</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div class="ov ov-prog">
+    <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+    <div class="prog-label" id="progLabel">// 00%</div>
+  </div>
+  <div class="ov ov-phase" id="phaseLabel">STEAM COAL</div>
+</div>
+
+<nav id="stickyNav">
+  <a href="index.html" class="sn-logo">AMBITION™ COAL</a>
+  <div class="sn-links">
+    <a href="about.html">ABOUT</a>
+    <a href="products.html" class="active">PRODUCTS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="origins.html">ORIGINS</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+</nav>
+
+<div id="scroll-body">
+
+  <section class="ss" id="s0"></section>
+
+  <!-- Product 1: Steam Coal -->
+  <section class="ss" id="s1">
+    <div class="ss-panel ss-left">
+      <div class="ss-tag">// 01 — THERMAL</div>
+      <h2 class="ss-title">STEAM<br><em>COAL</em></h2>
+      <p class="ss-body">High-calorific-value thermal coal for power stations and industrial furnaces. Consistent GCV, low moisture content, and stable sulphur levels for clean combustion.</p>
+      <div class="svc-block">
+        <div class="sv-row"><span class="sv-k">[GCV]</span><span class="sv-v">5500 – 6500 kcal/kg (NAR)</span></div>
+        <div class="sv-row"><span class="sv-k">[ASH]</span><span class="sv-v">&lt; 12 %</span></div>
+        <div class="sv-row"><span class="sv-k">[SULPHUR]</span><span class="sv-v">&lt; 0.6 %</span></div>
+        <div class="sv-row"><span class="sv-k">[MOISTURE]</span><span class="sv-v">&lt; 18 % (TM)</span></div>
+        <div class="sv-row"><span class="sv-k">[ORIGIN]</span><span class="sv-v">Indonesia · South Africa</span></div>
+        <div class="sv-row"><span class="sv-k">[PACKING]</span><span class="sv-v">Bulk vessel / OBO</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product 2: Coking Coal -->
+  <section class="ss" id="s2">
+    <div class="ss-panel ss-right">
+      <div class="ss-tag">// 02 — METALLURGICAL</div>
+      <h2 class="ss-title">COKING<br><em>COAL</em></h2>
+      <p class="ss-body">Metallurgical-grade coking coal for iron and steel production. Low ash, low phosphorus profile supports blast furnace efficiency and coke quality.</p>
+      <div class="svc-block">
+        <div class="sv-row"><span class="sv-k">[CSN]</span><span class="sv-v">6 – 8.5</span></div>
+        <div class="sv-row"><span class="sv-k">[ASH]</span><span class="sv-v">&lt; 9 %</span></div>
+        <div class="sv-row"><span class="sv-k">[VOLATILE]</span><span class="sv-v">22 – 28 %</span></div>
+        <div class="sv-row"><span class="sv-k">[SULPHUR]</span><span class="sv-v">&lt; 0.5 %</span></div>
+        <div class="sv-row"><span class="sv-k">[ORIGIN]</span><span class="sv-v">South Africa · Australia</span></div>
+        <div class="sv-row"><span class="sv-k">[PACKING]</span><span class="sv-v">Bulk cape-size vessel</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product 3: Manganese Ore -->
+  <section class="ss" id="s3">
+    <div class="ss-panel ss-left">
+      <div class="ss-tag">// 03 — FERROALLOY</div>
+      <h2 class="ss-title">MANGANESE<br><em>ORE</em></h2>
+      <p class="ss-body">Battery and steel-grade manganese ore. High Mn content, low phosphorus and iron, certified for use in ferro-alloy production and electrolytic manganese processing.</p>
+      <div class="svc-block">
+        <div class="sv-row"><span class="sv-k">[MN]</span><span class="sv-v">36 – 52 %</span></div>
+        <div class="sv-row"><span class="sv-k">[IRON (FE)]</span><span class="sv-v">&lt; 6 %</span></div>
+        <div class="sv-row"><span class="sv-k">[PHOSPHORUS]</span><span class="sv-v">&lt; 0.1 %</span></div>
+        <div class="sv-row"><span class="sv-k">[MOISTURE]</span><span class="sv-v">&lt; 10 %</span></div>
+        <div class="sv-row"><span class="sv-k">[ORIGIN]</span><span class="sv-v">South Africa · Zimbabwe</span></div>
+        <div class="sv-row"><span class="sv-k">[PACKING]</span><span class="sv-v">Bulk / Jumbo bags</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product 4: Chrome Ore -->
+  <section class="ss" id="s4">
+    <div class="ss-panel ss-right">
+      <div class="ss-tag">// 04 — REFRACTORY</div>
+      <h2 class="ss-title">CHROME<br><em>ORE</em></h2>
+      <p class="ss-body">High chrome, low iron chromite ore for ferrochrome smelters and refractory manufacturers. Consistent Cr₂O₃ grade with controlled SiO₂ levels.</p>
+      <div class="svc-block">
+        <div class="sv-row"><span class="sv-k">[CR₂O₃]</span><span class="sv-v">42 – 48 %</span></div>
+        <div class="sv-k">[CR:FE]</span><span class="sv-v">≥ 1.6</span></div>
+        <div class="sv-row"><span class="sv-k">[SIO₂]</span><span class="sv-v">&lt; 5 %</span></div>
+        <div class="sv-row"><span class="sv-k">[MOISTURE]</span><span class="sv-v">&lt; 8 %</span></div>
+        <div class="sv-row"><span class="sv-k">[ORIGIN]</span><span class="sv-v">South Africa · Zimbabwe · Kenya</span></div>
+        <div class="sv-row"><span class="sv-k">[PACKING]</span><span class="sv-v">Bulk / Jumbo bags</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product 5: Silica Ore -->
+  <section class="ss" id="s5">
+    <div class="ss-panel ss-center">
+      <div class="ss-tag">// 05 — INDUSTRIAL</div>
+      <h2 class="ss-title">SILICA<br><em>ORE</em></h2>
+      <p class="ss-body">Ultra-pure quartz and silica sand for glass, solar panel substrate, and chemical silicon production. Tightly controlled grain size and purity profile.</p>
+      <div class="svc-block">
+        <div class="sv-row"><span class="sv-k">[SIO₂]</span><span class="sv-v">98.5 – 99.5 %</span></div>
+        <div class="sv-row"><span class="sv-k">[FE₂O₃]</span><span class="sv-v">&lt; 0.02 %</span></div>
+        <div class="sv-row"><span class="sv-k">[AL₂O₃]</span><span class="sv-v">&lt; 0.15 %</span></div>
+        <div class="sv-row"><span class="sv-k">[SIZE]</span><span class="sv-v">0.1 – 0.6 mm AFS 40–70</span></div>
+        <div class="sv-row"><span class="sv-k">[ORIGIN]</span><span class="sv-v">India · Indonesia</span></div>
+        <div class="sv-row"><span class="sv-k">[PACKING]</span><span class="sv-v">50 kg bags / Bulk</span></div>
+      </div>
+      <a href="contact.html" class="cf-btn" style="display:inline-block;text-decoration:none;margin-top:20px"><span class="cf-btn-text">REQUEST SAMPLES</span><span class="cf-btn-arr">→</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="ft-left">
+    <span class="ft-logo">AMBITION™ COAL PVT. LTD.</span>
+    <span class="ft-copy">// Ahmedabad, India · Est. 2014 · © 2025</span>
+  </div>
+  <div class="ft-right">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="origins.html">ORIGINS</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="js/products.js"></script>
+<script src="js/utils.js"></script>
+</body>
+</html>

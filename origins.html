@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Origins — Ambition Coal Pvt. Ltd.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="subpage">
+
+<canvas id="c"></canvas>
+
+<div id="overlay">
+  <div class="ov ov-tl">
+    <div class="logo-block"><a href="index.html" style="text-decoration:none;color:inherit">AMBITION<sup>™</sup><br>COAL</a></div>
+    <div class="logo-meta">// Source Countries</div>
+  </div>
+  <div class="ov ov-tr">
+    <div class="man-head">////// ORIGINS</div>
+    <p class="man-body">
+      Four source nations.<br>
+      One destination — India.<br>
+      Every route certified,<br>
+      every tonne traced.
+    </p>
+  </div>
+  <div class="ov ov-bl">
+    <button id="soundBtn" class="sound-btn"><span class="sound-icon">◉</span> SOUND: <span id="soundState">OFF</span></button>
+  </div>
+  <div class="ov ov-bc" id="scrollCue">
+    <div class="scroll-cue"><span class="sc-line"></span>SCROLL TO EXPLORE</div>
+  </div>
+  <div class="ov ov-br">
+    <a href="about.html">ABOUT</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div class="ov ov-prog">
+    <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+    <div class="prog-label" id="progLabel">// 00%</div>
+  </div>
+  <div class="ov ov-phase" id="phaseLabel">GLOBE · SCAN</div>
+</div>
+
+<nav id="stickyNav">
+  <a href="index.html" class="sn-logo">AMBITION™ COAL</a>
+  <div class="sn-links">
+    <a href="about.html">ABOUT</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="origins.html" class="active">ORIGINS</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+</nav>
+
+<div id="scroll-body">
+
+  <section class="ss" id="s0"></section>
+
+  <!-- S1: Indonesia -->
+  <section class="ss" id="s1">
+    <div class="ss-panel ss-left">
+      <div class="ss-tag">// 01 — ASIA PACIFIC</div>
+      <h2 class="ss-title">INDONESIA<br><em>0°N · 113°E</em></h2>
+      <p class="ss-body">Our largest volume origin. Kalimantan basin thermal coal — abundant, well-graded, and competitively priced. Regular Panamax vessels from Samarinda and Balikpapan terminals.</p>
+      <div class="or-table">
+        <div class="or-row"><span class="or-label">STEAM COAL</span><div class="or-fill-wrap"><div class="or-fill" style="--w:88%"></div></div><span class="or-pct">88%</span></div>
+        <div class="or-row"><span class="or-label">SILICA</span><div class="or-fill-wrap"><div class="or-fill" style="--w:35%"></div></div><span class="or-pct">35%</span></div>
+        <div class="or-row"><span class="or-label">RELIABILITY</span><div class="or-fill-wrap"><div class="or-fill" style="--w:95%"></div></div><span class="or-pct">95%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S2: South Africa -->
+  <section class="ss" id="s2">
+    <div class="ss-panel ss-right">
+      <div class="ss-tag">// 02 — SOUTHERN AFRICA</div>
+      <h2 class="ss-title">SOUTH<br><em>AFRICA 30°S</em></h2>
+      <p class="ss-body">Premium coking and thermal coal from the Highveld and Waterberg regions. South African coal is globally recognised for its consistency and low-sulphur profile. Shipped via RBCT Richards Bay.</p>
+      <div class="or-table">
+        <div class="or-row"><span class="or-label">COKING COAL</span><div class="or-fill-wrap"><div class="or-fill" style="--w:75%"></div></div><span class="or-pct">75%</span></div>
+        <div class="or-row"><span class="or-label">THERMAL COAL</span><div class="or-fill-wrap"><div class="or-fill" style="--w:55%"></div></div><span class="or-pct">55%</span></div>
+        <div class="or-row"><span class="or-label">MANGANESE ORE</span><div class="or-fill-wrap"><div class="or-fill" style="--w:60%"></div></div><span class="or-pct">60%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3: Kenya & Zimbabwe -->
+  <section class="ss" id="s3">
+    <div class="ss-panel ss-left">
+      <div class="ss-tag">// 03 — EAST AFRICA</div>
+      <h2 class="ss-title">KENYA &amp;<br><em>ZIMBABWE</em></h2>
+      <p class="ss-body">Strategic chrome and manganese ore origins. Zimbabwe's Great Dyke formation yields some of the world's finest chromite ore. Kenyan silica sand is prized for its low-iron purity.</p>
+      <div class="or-table">
+        <div class="or-row"><span class="or-label">CHROME ORE</span><div class="or-fill-wrap"><div class="or-fill" style="--w:82%"></div></div><span class="or-pct">82%</span></div>
+        <div class="or-row"><span class="or-label">MANGANESE</span><div class="or-fill-wrap"><div class="or-fill" style="--w:48%"></div></div><span class="or-pct">48%</span></div>
+        <div class="or-row"><span class="or-label">SILICA SAND</span><div class="or-fill-wrap"><div class="or-fill" style="--w:30%"></div></div><span class="or-pct">30%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4: India -->
+  <section class="ss" id="s4">
+    <div class="ss-panel ss-center">
+      <div class="ss-tag">// 04 — DESTINATION</div>
+      <h2 class="ss-title">INDIA<br><em>23°N · 80°E</em></h2>
+      <p class="ss-body">The world's second-largest coal importer and a critical consumer of industrial minerals. Ambition Coal delivers to Gujarat, Maharashtra, Odisha, and Andhra Pradesh plant gates via major Indian ports.</p>
+      <div class="svc-block">
+        <div class="sv-row"><span class="sv-k">[PORTS]</span><span class="sv-v">Kandla · Mundra · Paradip · Vizag</span></div>
+        <div class="sv-row"><span class="sv-k">[STATES]</span><span class="sv-v">Gujarat · Maharashtra · Odisha · AP</span></div>
+        <div class="sv-row"><span class="sv-k">[SECTORS]</span><span class="sv-v">Steel · Power · Glass · Ferro-alloys</span></div>
+      </div>
+      <a href="contact.html" class="cf-btn" style="display:inline-block;text-decoration:none;margin-top:20px"><span class="cf-btn-text">START A SHIPMENT</span><span class="cf-btn-arr">→</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="ft-left">
+    <span class="ft-logo">AMBITION™ COAL PVT. LTD.</span>
+    <span class="ft-copy">// Ahmedabad, India · Est. 2014 · © 2025</span>
+  </div>
+  <div class="ft-right">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="js/origins.js"></script>
+<script src="js/utils.js"></script>
+</body>
+</html>

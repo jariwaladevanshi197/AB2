@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambition Coal — CRYSTAL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══ FIXED 3D CANVAS ══ -->
+<canvas id="c"></canvas>
+
+<!-- ══ FIXED OVERLAY — igloo-style corner blocks ══ -->
+<div id="overlay">
+
+  <!-- TOP LEFT: Logo -->
+  <div class="ov ov-tl">
+    <div class="logo-block">AMBITION<sup>™</sup><br>COAL</div>
+    <div class="logo-meta">// India's Premier Coal Supplier</div>
+  </div>
+
+  <!-- TOP RIGHT: Manifesto -->
+  <div class="ov ov-tr">
+    <div class="man-head">////// MANIFESTO</div>
+    <p class="man-body">
+      We exist to ensure that India's<br>
+      greatest industries never run short<br>
+      of the fuel that drives them forward.<br>
+      From the world's finest mines to<br>
+      India's industrial heartland —<br>
+      on time, every time.
+    </p>
+  </div>
+
+  <!-- BOTTOM LEFT: Sound toggle -->
+  <div class="ov ov-bl">
+    <button id="soundBtn" class="sound-btn">
+      <span class="sound-icon" id="soundIcon">◉</span>
+      SOUND: <span id="soundState">OFF</span>
+    </button>
+  </div>
+
+  <!-- BOTTOM CENTER: Scroll cue -->
+  <div class="ov ov-bc" id="scrollCue">
+    <div class="scroll-cue">
+      <span class="sc-line"></span>
+      SCROLL TO EXPLORE
+    </div>
+  </div>
+
+  <!-- BOTTOM RIGHT: Location -->
+  <div class="ov ov-br">
+    <span>AHMEDABAD, INDIA</span>
+    <span>EST. 2014 · © 2025</span>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="ov ov-prog">
+    <div class="prog-track"><div class="prog-fill" id="progFill"></div></div>
+    <div class="prog-label" id="progLabel">// 00%</div>
+  </div>
+
+  <!-- PHASE LABEL (top center) -->
+  <div class="ov ov-phase" id="phaseLabel">WIREFRAME</div>
+
+</div>
+
+<!-- ══ STICKY NAV ══ -->
+<nav id="stickyNav">
+  <a href="index.html" class="sn-logo">AMBITION™ COAL</a>
+  <div class="sn-links">
+    <a href="about.html">ABOUT</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="origins.html">ORIGINS</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+</nav>
+
+<!-- ══ SCROLL BODY — transparent sections over fixed canvas ══ -->
+<div id="scroll-body">
+
+  <!-- S0: Hero spacer (100vh, just the 3D + overlay) -->
+  <section class="ss" id="s0"></section>
+
+  <!-- S1: About -->
+  <section class="ss" id="s1">
+    <div class="ss-panel ss-left">
+      <div class="ss-tag">// 01 COMPANY</div>
+      <h2 class="ss-title">FUELING<br>INDIA'S<br><em>AMBITION</em></h2>
+      <p class="ss-body">Registered in Ahmedabad, operating since 2014. Ambition Coal Pvt. Ltd. has built an uncompromising reputation as India's trusted importer and supplier of premium coal and industrial minerals.</p>
+      <p class="ss-body">Promoted by <strong>Mr. Jayesh Mahesh Agrawal</strong> &amp; <strong>Yashika Jayesh Agrawal</strong> — we bridge the world's finest coal mines with India's most critical industries.</p>
+      <div class="ss-stats">
+        <div class="sstat">
+          <div class="ss-n"><span class="counter" data-target="10" data-suffix="+">0+</span></div>
+          <div class="ss-l">YRS ACTIVE</div>
+        </div>
+        <div class="sstat">
+          <div class="ss-n"><span class="counter" data-target="4">0</span></div>
+          <div class="ss-l">NATIONS</div>
+        </div>
+        <div class="sstat">
+          <div class="ss-n"><span class="counter" data-target="15" data-suffix="+">0+</span></div>
+          <div class="ss-l">ASSOCIATES</div>
+        </div>
+        <div class="sstat">
+          <div class="ss-n">1M+</div>
+          <div class="ss-l">MT SUPPLIED</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S2: Products -->
+  <section class="ss" id="s2">
+    <div class="ss-panel ss-right">
+      <div class="ss-tag">// 02 PORTFOLIO</div>
+      <h2 class="ss-title">WHAT WE<br><em>SUPPLY</em></h2>
+      <div class="prod-list">
+        <div class="pl-row" data-detail="GCV 4200–6500 kcal/kg · Low Sulphur · Kalimantan & Sumatra">
+          <span class="pl-n">01</span><span class="pl-name">STEAM COAL</span><span class="pl-from">INDONESIA →</span>
+        </div>
+        <div class="pl-row" data-detail="Low Ash · High CSR · Mpumalanga Basin">
+          <span class="pl-n">02</span><span class="pl-name">COKING COAL</span><span class="pl-from">S. AFRICA →</span>
+        </div>
+        <div class="pl-row" data-detail="Mn 35–48% · Low Phosphorus · Kalahari Basin">
+          <span class="pl-n">03</span><span class="pl-name">MANGANESE ORE</span><span class="pl-from">KENYA →</span>
+        </div>
+        <div class="pl-row" data-detail="Cr₂O₃ 40–48% · Metallurgical Grade · Hwange">
+          <span class="pl-n">04</span><span class="pl-name">CHROME ORE</span><span class="pl-from">ZIMBABWE →</span>
+        </div>
+        <div class="pl-row" data-detail="SiO₂ 95–99% · Foundry Grade · Premium Quality">
+          <span class="pl-n">05</span><span class="pl-name">SILICA ORE</span><span class="pl-from">KENYA →</span>
+        </div>
+      </div>
+      <div class="pl-detail" id="plDetail">// Hover a product for specifications</div>
+    </div>
+  </section>
+
+  <!-- S3: Services -->
+  <section class="ss" id="s3">
+    <div class="ss-panel ss-left">
+      <div class="ss-tag">// 03 SERVICES</div>
+      <h2 class="ss-title">END-TO-END<br><em>LOGISTICS</em></h2>
+      <div class="svc-block">
+        <div class="sv-row">
+          <span class="sv-k">[STEVEDORING]</span>
+          <span class="sv-v">Port operations · Kandla · Mundra</span>
+        </div>
+        <div class="sv-row">
+          <span class="sv-k">[TRANSPORT]</span>
+          <span class="sv-v">Road fleet · GJ · RJ · MP · MH</span>
+        </div>
+        <div class="sv-row">
+          <span class="sv-k">[TESTING]</span>
+          <span class="sv-v">GCV analysis · Third-party labs</span>
+        </div>
+        <div class="sv-row">
+          <span class="sv-k">[STOCKYARD]</span>
+          <span class="sv-v">Unloading · Stacking · Blending</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4: Origins -->
+  <section class="ss" id="s4">
+    <div class="ss-panel ss-right">
+      <div class="ss-tag">// 04 SOURCE NETWORK</div>
+      <h2 class="ss-title">GLOBAL<br><em>ORIGINS</em></h2>
+      <div class="origins-list">
+        <div class="or-row">
+          <span class="or-flag">🇮🇩</span>
+          <div class="or-body">
+            <span class="or-code">ID · INDONESIA</span>
+            <span class="or-detail">Kalimantan &amp; Sumatra · Steam Coal</span>
+          </div>
+          <div class="or-bar"><div class="or-fill" style="--w:85%"></div></div>
+        </div>
+        <div class="or-row">
+          <span class="or-flag">🇿🇦</span>
+          <div class="or-body">
+            <span class="or-code">ZA · SOUTH AFRICA</span>
+            <span class="or-detail">Mpumalanga Basin · Coking Coal</span>
+          </div>
+          <div class="or-bar"><div class="or-fill" style="--w:70%"></div></div>
+        </div>
+        <div class="or-row">
+          <span class="or-flag">🇰🇪</span>
+          <div class="or-body">
+            <span class="or-code">KE · KENYA</span>
+            <span class="or-detail">Nairobi Region · Manganese &amp; Silica</span>
+          </div>
+          <div class="or-bar"><div class="or-fill" style="--w:55%"></div></div>
+        </div>
+        <div class="or-row">
+          <span class="or-flag">🇿🇼</span>
+          <div class="or-body">
+            <span class="or-code">ZW · ZIMBABWE</span>
+            <span class="or-detail">Hwange Region · Chrome Ore</span>
+          </div>
+          <div class="or-bar"><div class="or-fill" style="--w:45%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5: Contact -->
+  <section class="ss" id="s5">
+    <div class="ss-panel ss-center">
+      <div class="ss-tag">// 05 CONTACT</div>
+      <h2 class="ss-title">START A<br><em>CONVERSATION</em></h2>
+      <p class="ss-sub">Tell us your requirements. Response within 24 hours.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="cf-row">
+          <div class="cf-field">
+            <label>// NAME</label>
+            <input type="text" placeholder="Your full name" required>
+          </div>
+          <div class="cf-field">
+            <label>// COMPANY</label>
+            <input type="text" placeholder="Company name">
+          </div>
+        </div>
+        <div class="cf-row">
+          <div class="cf-field">
+            <label>// EMAIL</label>
+            <input type="email" placeholder="your@email.com" required>
+          </div>
+          <div class="cf-field">
+            <label>// PRODUCT</label>
+            <select>
+              <option value="">Select…</option>
+              <option>Steam Coal</option>
+              <option>Coking Coal</option>
+              <option>Manganese Ore</option>
+              <option>Chrome Ore</option>
+              <option>Silica Ore</option>
+            </select>
+          </div>
+        </div>
+        <div class="cf-field cf-wide">
+          <label>// MESSAGE</label>
+          <textarea rows="3" placeholder="Monthly requirement, GCV specs, delivery location…"></textarea>
+        </div>
+        <button type="submit" class="cf-btn">
+          <span class="cf-btn-text">SEND ENQUIRY</span>
+          <span class="cf-btn-arr">→</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="ft-left">
+    <span class="ft-logo">AMBITION™ COAL PVT. LTD.</span>
+    <span class="ft-copy">// Ahmedabad, India · Est. 2014 · © 2025</span>
+    <span class="ft-promo">Promoted by Mr. Jayesh Mahesh Agrawal &amp; Yashika Jayesh Agrawal</span>
+  </div>
+  <div class="ft-right">
+    <a href="#s1">ABOUT</a>
+    <a href="#s2">PRODUCTS</a>
+    <a href="#s3">SERVICES</a>
+    <a href="#s4">ORIGINS</a>
+    <a href="#s5">CONTACT</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
