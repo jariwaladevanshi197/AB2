@@ -1,32 +1,88 @@
-// Header scroll
-const siteHeader = document.getElementById('site-header');
-if (siteHeader) {
+'use strict';
+
+/* ── Header scroll ── */
+const header = document.getElementById('site-header');
+if (header) {
   window.addEventListener('scroll', () => {
-    siteHeader.classList.toggle('scrolled', window.scrollY > 20);
+    header.classList.toggle('scrolled', window.scrollY > 10);
   }, { passive: true });
 }
 
-// Mobile nav
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.querySelector('.nav-links');
-if (hamburger && navLinks) {
-  hamburger.addEventListener('click', () => {
-    const open = hamburger.classList.toggle('open');
-    if (open) {
-      navLinks.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:#fff;padding:12px 20px 20px;border-bottom:1px solid rgba(0,0,0,.07);gap:2px;z-index:198;box-shadow:0 8px 24px rgba(0,0,0,.08)';
-    } else {
-      navLinks.style.cssText = '';
+/* ── Mobile nav ── */
+const navToggle  = document.getElementById('nav-toggle');
+const mobileNav  = document.getElementById('mobile-nav');
+if (navToggle && mobileNav) {
+  navToggle.addEventListener('click', () => {
+    const open = navToggle.classList.toggle('open');
+    mobileNav.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navToggle.classList.remove('open');
+      mobileNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+      navToggle.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
     }
   });
 }
 
-// Smooth scroll for anchor links
+/* ── Scroll reveal ── */
+const revealEls = document.querySelectorAll('.rv');
+if (revealEls.length) {
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => revealObs.observe(el));
+}
+
+/* ── Counter animation ── */
+const counters = document.querySelectorAll('[data-count]');
+if (counters.length) {
+  const countObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const target = parseFloat(el.dataset.count);
+      const dur = 1600;
+      const start = performance.now();
+      const tick = (now) => {
+        const p = Math.min((now - start) / dur, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(ease * target);
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = target;
+      };
+      requestAnimationFrame(tick);
+      countObs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => countObs.observe(c));
+}
+
+/* ── Smooth scroll for anchor links ── */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
+    const id = a.getAttribute('href');
+    if (id === '#') return;
+    const target = document.querySelector(id);
     if (target) {
       e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const offset = target.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
     }
   });
 });

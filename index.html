@@ -4,28 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ambition Coal Pvt. Ltd. — Trusted Coal Trading Since 2013</title>
+<meta name="description" content="Ambition Coal is a global commodity trading company specialising in coal and expanding into salt. Trusted by industries across India since 2013.">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- Header -->
+<!-- ═══════════════════════════════════
+     HEADER
+     ═══════════════════════════════════ -->
 <header class="site-header" id="site-header">
   <div class="container">
-    <nav class="site-nav">
-      <a href="index.html" class="logo">
-        <div class="logo-mark">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="20,4 36,34 4,34" fill="#E8620A"/>
-            <line x1="20" y1="10" x2="20" y2="28" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <line x1="20" y1="10" x2="15" y2="18" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <line x1="20" y1="10" x2="25" y2="18" stroke="white" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="logo-copy">
+    <nav class="nav-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Ambition Coal — Home">
+        <svg class="logo-emblem" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="20,3 37,34 3,34" fill="#E8620A"/>
+          <path d="M20 10 L20 27 M20 10 L14.5 19 M20 10 L25.5 19"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="logo-words">
           <span class="logo-name">Ambition</span>
-          <span class="logo-sub">Coal Pvt. Ltd.</span>
+          <span class="logo-tagline">Coal Pvt. Ltd.</span>
         </div>
       </a>
+
+      <!-- Desktop nav -->
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -35,264 +39,510 @@
         <li><a href="associates.html">Associates</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-      <a href="contact.html" class="btn btn-fill nav-cta">Get in Touch</a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+
+      <a href="contact.html" class="btn btn-primary btn-sm nav-cta" style="margin-left:16px;flex-shrink:0">Get in Touch</a>
+
+      <!-- Mobile toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+
     </nav>
   </div>
 </header>
 
-<!-- Hero -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="container" style="display:contents">
-      <div class="hero-left">
-        <span class="hero-tag">Trusted Coal Trading Since 2013</span>
-        <h1 class="hero-title">
-          Fueling <em>today.</em>
-          Building <em>tomorrow.</em>
-        </h1>
-        <p class="hero-desc">Ambition Coal is a global trading company delivering quality coal solutions with integrity and ambition — connecting reliable suppliers with industries that power India.</p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn-fill">Get a Quote →</a>
-          <a href="about.html" class="btn btn-dark">Learn About Us</a>
-        </div>
+<!-- Mobile drawer -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">What We Trade</a></li>
+    <li><a href="origins.html">Origins</a></li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="associates.html">Associates</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════════════════
+     HERO
+     ═══════════════════════════════════ -->
+<section class="hero" aria-label="Hero">
+  <!-- Left: Copy -->
+  <div class="hero-copy">
+    <div class="eyebrow rv">Trusted Coal Trading Since 2013</div>
+    <h1 class="hero-title rv rv-d1">
+      Fueling <em>today.</em>
+      Building <em>tomorrow.</em>
+    </h1>
+    <p class="hero-desc rv rv-d2">
+      Ambition Coal is a global commodity trading company delivering
+      quality coal solutions with integrity and ambition — connecting
+      reliable suppliers with industries that power India.
+    </p>
+    <div class="hero-actions rv rv-d3">
+      <a href="contact.html" class="btn btn-primary">Get a Quote &rarr;</a>
+      <a href="about.html"   class="btn btn-ghost">Learn About Us</a>
+    </div>
+    <div class="hero-stats rv rv-d4">
+      <div>
+        <div class="hstat-val"><span data-count="10">0</span>+</div>
+        <div class="hstat-lbl">Years Active</div>
       </div>
-      <div class="hero-right">
-        <div class="hero-img">
-          <!-- Replace src with actual coal yard/industrial photo -->
-          <div class="hero-img-placeholder">
-            <span class="hero-img-tag">Coal Yard — Replace with actual image</span>
-          </div>
-        </div>
+      <div>
+        <div class="hstat-val"><span data-count="4">0</span></div>
+        <div class="hstat-lbl">Origins</div>
       </div>
+      <div>
+        <div class="hstat-val"><span data-count="15">0</span>+</div>
+        <div class="hstat-lbl">Associates</div>
+      </div>
+      <div>
+        <div class="hstat-val"><span data-count="1">0</span>M+</div>
+        <div class="hstat-lbl">MT Supplied</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Visual -->
+  <div class="hero-visual" aria-hidden="true">
+    <div class="hero-visual-bg">
+      <!-- Replace with: <img src="images/coal-yard.jpg" alt=""> -->
+    </div>
+    <div class="hero-pill">
+      <span class="hero-pill-since">Est.</span>
+      <span class="hero-pill-year">2013</span>
+    </div>
+    <div class="hero-tag-box">
+      <span class="hero-tag-dot"></span>
+      <span class="hero-tag-text">Ahmedabad, Gujarat · India</span>
     </div>
   </div>
 </section>
 
-<!-- Pillars -->
-<section class="pillars">
+<!-- ═══════════════════════════════════
+     TICKER
+     ═══════════════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <!-- first copy -->
+    <span class="ticker-item">Steam Coal</span>
+    <span class="ticker-item">Coking Coal</span>
+    <span class="ticker-item">Anthracite</span>
+    <span class="ticker-item">Manganese Ore</span>
+    <span class="ticker-item">Indonesia Origin</span>
+    <span class="ticker-item">South Africa</span>
+    <span class="ticker-item">Kenya</span>
+    <span class="ticker-item">Zimbabwe</span>
+    <span class="ticker-item">Port-to-Plant</span>
+    <span class="ticker-item">Quality Certified</span>
+    <span class="ticker-item">On-Time Delivery</span>
+    <span class="ticker-item">Industrial Salt</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item">Steam Coal</span>
+    <span class="ticker-item">Coking Coal</span>
+    <span class="ticker-item">Anthracite</span>
+    <span class="ticker-item">Manganese Ore</span>
+    <span class="ticker-item">Indonesia Origin</span>
+    <span class="ticker-item">South Africa</span>
+    <span class="ticker-item">Kenya</span>
+    <span class="ticker-item">Zimbabwe</span>
+    <span class="ticker-item">Port-to-Plant</span>
+    <span class="ticker-item">Quality Certified</span>
+    <span class="ticker-item">On-Time Delivery</span>
+    <span class="ticker-item">Industrial Salt</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     PILLARS
+     ═══════════════════════════════════ -->
+<section class="section section-alt" aria-labelledby="pillars-heading">
   <div class="container">
-    <div class="pillars-row">
-      <div class="pillar">
+    <div class="pillars-grid">
+
+      <div class="pillar rv">
         <div class="pillar-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
         </div>
-        <h3 class="pillar-title">Global Reach</h3>
-        <p class="pillar-desc">Sourcing from Indonesia, South Africa, Kenya &amp; Zimbabwe — delivered across India.</p>
+        <h3 class="h3">Global Reach</h3>
+        <p>Sourcing premium coal from Indonesia, South Africa, Kenya &amp; Zimbabwe — delivered to your plant across India.</p>
       </div>
-      <div class="pillar">
+
+      <div class="pillar rv rv-d1">
         <div class="pillar-icon">
-          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
         </div>
-        <h3 class="pillar-title">Trusted Quality</h3>
-        <p class="pillar-desc">Independent international testing at every stage of the supply chain.</p>
+        <h3 class="h3">Trusted Quality</h3>
+        <p>Independent international quality testing at every stage of the supply chain — zero compromise.</p>
       </div>
-      <div class="pillar">
+
+      <div class="pillar rv rv-d2">
         <div class="pillar-icon">
           <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
-        <h3 class="pillar-title">Built on Integrity</h3>
-        <p class="pillar-desc">Transparent relationships and ethical business practices since 2013.</p>
+        <h3 class="h3">Built on Integrity</h3>
+        <p>Transparent partnerships and ethical business practices form the foundation of everything we do.</p>
       </div>
-      <div class="pillar">
+
+      <div class="pillar rv rv-d3">
         <div class="pillar-icon">
           <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
         </div>
-        <h3 class="pillar-title">Future Focused</h3>
-        <p class="pillar-desc">Expanding into new commodities while maintaining long-term partnerships.</p>
+        <h3 class="h3">Future Focused</h3>
+        <p>Expanding into new commodities while maintaining long-term relationships with mines and end-users.</p>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- About -->
-<section class="about-sec" id="about">
+<!-- ═══════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════ -->
+<section class="section" id="about" aria-labelledby="about-heading">
   <div class="container">
     <div class="about-grid">
-      <div class="about-left">
-        <div class="eyebrow">About Ambition Coal</div>
-        <h2 class="sec-title">A strong foundation.<br>An <em>ambitious</em> future.</h2>
-        <p class="sec-text">Ambition Coal is a dynamic trading company specialising in the global trade of coal. Registered in Ahmedabad and promoted by Mr. Jayesh Mahesh Agrawal &amp; Yashika Jayesh Agrawal, we connect reliable suppliers with industries that power India.</p>
-        <p class="sec-text">With a commitment to quality, transparency, and long-term partnerships, we deliver value that goes beyond transactions — and we are building for the future.</p>
-        <a href="about.html" class="btn btn-outline">Learn More About Us →</a>
+
+      <!-- Text -->
+      <div class="about-text">
+        <div class="eyebrow rv">About Ambition Coal</div>
+        <h2 class="h2 rv rv-d1" id="about-heading">
+          A strong foundation.<br>An <em>ambitious</em> future.
+        </h2>
+        <p class="lead rv rv-d2">
+          Ambition Coal is a dynamic trading company specialising in the global
+          trade of coal. Registered in Ahmedabad and promoted by
+          Mr. Jayesh Mahesh Agrawal &amp; Yashika Jayesh Agrawal, we connect
+          reliable suppliers with industries that power India.
+        </p>
+        <ul class="about-checklist rv rv-d2">
+          <li>Pioneer in supplying imported coal across 4 Indian states</li>
+          <li>Independent international quality testing at every stage</li>
+          <li>Long-term contracts with leading mines &amp; end-users</li>
+          <li>Competitive pricing with zero-compromise on quality</li>
+        </ul>
+        <a href="about.html" class="btn btn-ghost-orange rv rv-d3">
+          Learn More About Us &rarr;
+        </a>
       </div>
-      <div class="about-right">
+
+      <!-- Visual -->
+      <div class="about-visual rv rv-d2">
         <div class="about-img">
-          <!-- Replace with industrial/port image -->
+          <!-- Replace with: <img src="images/about-industrial.jpg" alt="Industrial coal operations"> -->
         </div>
-        <div class="about-accent">
-          <div class="about-accent-logo">
-            <svg viewBox="0 0 40 40" fill="none" width="28" height="28">
-              <polygon points="20,4 36,34 4,34" fill="white" opacity="0.9"/>
-            </svg>
-          </div>
+        <div class="about-accent-card">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <polygon points="20,3 37,34 3,34" fill="white" opacity=".9"/>
+          </svg>
           <p>Ambition drives everything we do.</p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- Products -->
-<section class="products-sec" id="products">
+<!-- ═══════════════════════════════════
+     STATS STRIP
+     ═══════════════════════════════════ -->
+<div class="stats-strip">
   <div class="container">
-    <div class="products-header">
-      <div class="eyebrow center">What We Trade</div>
-      <h2 class="sec-title center">Quality coal. <em>Reliable</em> supply.</h2>
-      <p class="sec-text center">We trade a wide range of coal grades and commodities to meet diverse industrial needs.</p>
+    <div class="stats-row">
+      <div class="stat-cell rv">
+        <div class="stat-label">Years in Operation</div>
+        <div class="stat-number"><span data-count="10">0</span><span class="stat-unit">+</span></div>
+        <div class="stat-desc">Trusted coal expertise since 2013</div>
+      </div>
+      <div class="stat-cell rv rv-d1">
+        <div class="stat-label">Origin Countries</div>
+        <div class="stat-number"><span data-count="4">0</span></div>
+        <div class="stat-desc">Indonesia · South Africa · Kenya · Zimbabwe</div>
+      </div>
+      <div class="stat-cell rv rv-d2">
+        <div class="stat-label">Major Associates</div>
+        <div class="stat-number"><span data-count="15">0</span><span class="stat-unit">+</span></div>
+        <div class="stat-desc">TATA · JSW · Heidelberg &amp; more</div>
+      </div>
+      <div class="stat-cell rv rv-d3">
+        <div class="stat-label">MT Supplied</div>
+        <div class="stat-number"><span data-count="1">0</span><span class="stat-unit">M+</span></div>
+        <div class="stat-desc">Cumulative coal delivered across 4 states</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     PRODUCTS — COAL
+     ═══════════════════════════════════ -->
+<section class="section" id="products" aria-labelledby="products-heading">
+  <div class="container">
+
+    <div class="products-header rv">
+      <div class="eyebrow">What We Trade</div>
+      <h2 class="h2" id="products-heading">Quality coal. <em>Reliable</em> supply.</h2>
+      <p class="text-muted">
+        We trade a wide range of coal grades to meet diverse industrial
+        needs — from power generation to steel production.
+      </p>
     </div>
 
     <div class="products-grid">
-      <div class="prod-card">
-        <div class="prod-img coal-bg">
-          <!-- Replace with thermal coal image -->
+
+      <!-- Thermal Coal -->
+      <div class="prod-card rv">
+        <div class="prod-card-img ci-1">
+          <!-- <img src="images/thermal-coal.jpg" alt="Thermal coal"> -->
         </div>
-        <div class="prod-body">
-          <div class="prod-icon">🔥</div>
-          <h3 class="prod-name">Thermal Coal</h3>
-          <p class="prod-desc">High-quality thermal coal for power generation and industrial applications across 4 Indian states.</p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img coal-bg-2">
-          <!-- Replace with metallurgical coal image -->
-        </div>
-        <div class="prod-body">
-          <div class="prod-icon">⚙️</div>
-          <h3 class="prod-name">Metallurgical Coal</h3>
-          <p class="prod-desc">Premium coking coal for steel production and metallurgical processes.</p>
+        <div class="prod-card-body">
+          <div class="prod-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg>
+          </div>
+          <h3 class="h3">Thermal Coal</h3>
+          <p>High-quality thermal coal for power generation and industrial applications across 4 Indian states.</p>
         </div>
       </div>
-      <div class="prod-card">
-        <div class="prod-img coal-bg-3">
-          <!-- Replace with anthracite image -->
+
+      <!-- Metallurgical Coal -->
+      <div class="prod-card rv rv-d1">
+        <div class="prod-card-img ci-2">
+          <!-- <img src="images/metallurgical-coal.jpg" alt="Metallurgical coal"> -->
         </div>
-        <div class="prod-body">
-          <div class="prod-icon">💎</div>
-          <h3 class="prod-name">Anthracite</h3>
-          <p class="prod-desc">High-carbon coal for efficient and clean energy solutions across diverse industries.</p>
-        </div>
-      </div>
-      <div class="prod-card">
-        <div class="prod-img coal-bg-4">
-          <!-- Replace with customized solutions image -->
-        </div>
-        <div class="prod-body">
-          <div class="prod-icon">📦</div>
-          <h3 class="prod-name">Customized Solutions</h3>
-          <p class="prod-desc">Tailored coal blends and supply solutions designed to meet your specific requirements.</p>
+        <div class="prod-card-body">
+          <div class="prod-card-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3 class="h3">Metallurgical Coal</h3>
+          <p>Premium coking coal for steel production and metallurgical processes, sourced from global mines.</p>
         </div>
       </div>
+
+      <!-- Anthracite -->
+      <div class="prod-card rv rv-d2">
+        <div class="prod-card-img ci-3">
+          <!-- <img src="images/anthracite.jpg" alt="Anthracite coal"> -->
+        </div>
+        <div class="prod-card-body">
+          <div class="prod-card-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="h3">Anthracite</h3>
+          <p>High-carbon coal for efficient and clean energy solutions across diverse industrial applications.</p>
+        </div>
+      </div>
+
+      <!-- Customized Solutions -->
+      <div class="prod-card rv rv-d3">
+        <div class="prod-card-img ci-4">
+          <!-- <img src="images/customized-solutions.jpg" alt="Coal supply solutions"> -->
+        </div>
+        <div class="prod-card-body">
+          <div class="prod-card-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          </div>
+          <h3 class="h3">Customized Solutions</h3>
+          <p>Tailored coal blends and supply strategies designed precisely around your operational requirements.</p>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Salt — Coming Soon -->
-    <div class="salt-banner">
-      <div class="salt-label">Expanding Into</div>
-      <div class="salt-item">
-        <div class="salt-item-icon salt-icon-bg-1">🧂</div>
-        <div class="salt-item-content">
-          <span class="salt-badge">Coming Soon</span>
-          <h3 class="salt-name">Industrial Grade Salt</h3>
-          <p class="salt-desc">Bulk industrial salt for chemical processing, water treatment, de-icing, and manufacturing applications.</p>
+    <!-- Salt — Expanding Into -->
+    <div class="salt-panel rv rv-d1">
+
+      <div class="salt-aside">
+        <div class="salt-aside-eyebrow">Expanding Into</div>
+        <div class="salt-aside-title">Salt &amp; New Commodities</div>
+        <div class="salt-aside-sub">
+          Ambition Coal is diversifying into salt trading and manufacturing
+          — bringing the same reliability to new markets.
         </div>
       </div>
-      <div class="salt-item">
-        <div class="salt-item-icon salt-icon-bg-2">🍽️</div>
-        <div class="salt-item-content">
-          <span class="salt-badge">Coming Soon</span>
-          <h3 class="salt-name">Edible Salt</h3>
-          <p class="salt-desc">Premium quality edible salt under our upcoming consumer brand — clean, pure, and responsibly sourced.</p>
-        </div>
+
+      <!-- Industrial Salt -->
+      <div class="salt-product">
+        <div class="salt-thumb ind"></div>
+        <!-- <img src="images/industrial-salt.jpg" alt="Industrial grade salt" style="width:56px;height:56px;object-fit:cover;margin-bottom:20px"> -->
+        <span class="salt-badge">Coming Soon</span>
+        <h3 class="h3">Industrial Grade Salt</h3>
+        <p class="text-muted">
+          Bulk industrial salt for chemical processing, water treatment,
+          de-icing, and manufacturing applications — supplied at scale.
+        </p>
       </div>
+
+      <!-- Edible Salt -->
+      <div class="salt-product">
+        <div class="salt-thumb edi"></div>
+        <!-- <img src="images/edible-salt.jpg" alt="Premium edible salt" style="width:56px;height:56px;object-fit:cover;margin-bottom:20px"> -->
+        <span class="salt-badge">Coming Soon</span>
+        <h3 class="h3">Edible Salt</h3>
+        <p class="text-muted">
+          Premium quality edible salt under our upcoming consumer brand —
+          pure, clean, and responsibly sourced for Indian households.
+        </p>
+      </div>
+
     </div>
 
-    <div class="products-cta">
-      <a href="contact.html" class="btn btn-dark">Request a Quote →</a>
+    <div class="products-cta rv">
+      <a href="contact.html" class="btn btn-ghost">Request a Quote &rarr;</a>
     </div>
+
   </div>
 </section>
 
-<!-- Vision -->
-<section class="vision-sec" id="vision">
+<!-- ═══════════════════════════════════
+     VISION
+     ═══════════════════════════════════ -->
+<section class="section section-dark" id="vision" aria-labelledby="vision-heading">
   <div class="container">
     <div class="vision-grid">
-      <div class="vision-img">
-        <!-- Replace with landscape/salt flats/industrial image -->
+
+      <!-- Image -->
+      <div class="vision-img rv">
+        <!-- <img src="images/vision-landscape.jpg" alt="Salt flats and industrial landscape"> -->
       </div>
-      <div class="vision-right">
-        <div class="eyebrow light">Our Vision</div>
-        <h2 class="sec-title light">Expanding horizons.<br>Building the <em>future.</em></h2>
-        <p class="sec-text light">While coal trading is our strength today, we are building for tomorrow. Ambition Coal is expanding into new commodities — starting with salt — creating long-term value and entering manufacturing.</p>
-        <p class="sec-text light">Our goal is to become a diversified commodity trading and manufacturing group, trusted across markets.</p>
-        <a href="about.html" class="btn btn-light" style="margin-top:8px">Our Story →</a>
+
+      <!-- Text -->
+      <div class="vision-text">
+        <div class="eyebrow light rv">Our Vision</div>
+        <h2 class="h2 light rv rv-d1" id="vision-heading">
+          Expanding horizons.<br>Building the <em>future.</em>
+        </h2>
+        <p class="text-light rv rv-d2" style="margin-bottom:14px">
+          While coal trading is our strength today, we are building for tomorrow.
+          Ambition Coal is expanding into new commodities — starting with salt —
+          creating long-term value across industries.
+        </p>
+        <p class="text-light rv rv-d2">
+          Our goal is to become a diversified commodity trading and manufacturing
+          group, trusted across markets for decades to come.
+        </p>
+        <a href="about.html" class="btn btn-ghost-light rv rv-d3" style="margin-top:8px">
+          Our Story &rarr;
+        </a>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- Why Us -->
-<section class="why-sec" id="why-us">
+<!-- ═══════════════════════════════════
+     WHY US
+     ═══════════════════════════════════ -->
+<section class="section" id="why-us" aria-labelledby="why-heading">
   <div class="container">
-    <div class="why-intro">
+
+    <div class="why-header rv">
       <div class="eyebrow center">Why Partner With Us</div>
-      <h2 class="sec-title center">What sets us apart</h2>
+      <h2 class="h2 center" id="why-heading">What sets us apart</h2>
     </div>
+
     <div class="why-grid">
-      <div class="why-card">
-        <div class="why-icon">🏅</div>
-        <h3 class="why-title">10+ Years Experience</h3>
-        <p class="why-desc">Deep industry knowledge and proven global market expertise since 2013.</p>
+
+      <div class="why-card rv">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <h3 class="h3">10+ Years<br>Experience</h3>
+        <p>Deep industry knowledge and proven global market expertise since 2013.</p>
       </div>
-      <div class="why-card">
-        <div class="why-icon">🌐</div>
-        <h3 class="why-title">Global Network</h3>
-        <p class="why-desc">Strong long-term relationships with trusted suppliers and clients worldwide.</p>
+
+      <div class="why-card rv rv-d1">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+        </div>
+        <h3 class="h3">Global<br>Network</h3>
+        <p>Strong long-term relationships with trusted suppliers and clients worldwide.</p>
       </div>
-      <div class="why-card">
-        <div class="why-icon">🎯</div>
-        <h3 class="why-title">Customer Focused</h3>
-        <p class="why-desc">Solutions designed around your business needs, not one-size-fits-all.</p>
+
+      <div class="why-card rv rv-d2">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3 class="h3">On-Time<br>Delivery</h3>
+        <p>Rigorous logistics management ensures your plant never waits for supply.</p>
       </div>
-      <div class="why-card">
-        <div class="why-icon">🔒</div>
-        <h3 class="why-title">Reliable &amp; Transparent</h3>
-        <p class="why-desc">Committed to honesty, consistent quality, and on-time delivery.</p>
+
+      <div class="why-card rv rv-d3">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h3 class="h3">Reliable &amp;<br>Transparent</h3>
+        <p>Committed to honesty, consistent quality, and clear communication always.</p>
       </div>
-      <div class="why-card">
-        <div class="why-icon">🌱</div>
-        <h3 class="why-title">Sustainable Approach</h3>
-        <p class="why-desc">Focused on responsible growth and long-term value across industries.</p>
+
+      <div class="why-card rv rv-d4">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22V12m0 0C12 6.477 7.523 2 2 2"/><path d="M12 12c0-5.523 4.477-10 10-10"/><path d="M2 22c0-5.523 4.477-10 10-10"/><path d="M22 22c0-5.523-4.477-10-10-10"/></svg>
+        </div>
+        <h3 class="h3">Sustainable<br>Approach</h3>
+        <p>Focused on responsible growth and long-term value across all markets.</p>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- Footer -->
+<!-- ═══════════════════════════════════
+     CTA BAND
+     ═══════════════════════════════════ -->
+<div class="cta-band">
+  <div class="container">
+    <div class="cta-band-inner rv">
+      <h2>
+        Ready to source quality coal<br>
+        <span>with a partner you can trust?</span>
+      </h2>
+      <a href="contact.html" class="btn btn-white btn-lg">
+        Let's Talk &rarr;
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- ═══════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════ -->
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-main">
+    <div class="footer-top">
+
+      <!-- Brand -->
       <div class="footer-brand">
         <a href="index.html" class="logo">
-          <div class="logo-mark">
-            <svg viewBox="0 0 40 40" fill="none">
-              <polygon points="20,4 36,34 4,34" fill="#E8620A"/>
-            </svg>
-          </div>
-          <div class="logo-copy">
+          <svg class="logo-emblem" viewBox="0 0 40 40" fill="none">
+            <polygon points="20,3 37,34 3,34" fill="#E8620A"/>
+            <path d="M20 10 L20 27 M20 10 L14.5 19 M20 10 L25.5 19"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-words">
             <span class="logo-name">Ambition</span>
-            <span class="logo-sub">Coal Pvt. Ltd.</span>
+            <span class="logo-tagline">Coal Pvt. Ltd.</span>
           </div>
         </a>
-        <p class="footer-tagline">A global commodity trading company building a sustainable future for generations to come.</p>
+        <p class="footer-tagline">
+          A global commodity trading company building sustainable value
+          for generations to come.
+        </p>
         <div class="footer-socials">
           <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
           <a href="#" class="social-btn" aria-label="Facebook">f</a>
           <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
         </div>
       </div>
+
+      <!-- Columns -->
       <div class="footer-cols">
+
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
@@ -301,9 +551,11 @@
             <li><a href="services.html">What We Trade</a></li>
             <li><a href="origins.html">Origins</a></li>
             <li><a href="associates.html">Associates</a></li>
+            <li><a href="csr.html">CSR</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>What We Trade</h4>
           <ul>
@@ -311,23 +563,45 @@
             <li><a href="products.html">Metallurgical Coal</a></li>
             <li><a href="products.html">Anthracite</a></li>
             <li><a href="products.html">Customized Solutions</a></li>
-            <li><a href="products.html">Industrial Salt <span style="color:var(--orange);font-size:.68rem">(Soon)</span></a></li>
-            <li><a href="products.html">Edible Salt <span style="color:var(--orange);font-size:.68rem">(Soon)</span></a></li>
+            <li>
+              <a href="products.html" class="coming">
+                Industrial Salt <span class="soon-pill">Soon</span>
+              </a>
+            </li>
+            <li>
+              <a href="products.html" class="coming">
+                Edible Salt <span class="soon-pill">Soon</span>
+              </a>
+            </li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Get in Touch</h4>
-          <ul>
-            <li class="contact-item">📞 +91 79 XXXX XXXX</li>
-            <li class="contact-item">✉️ info@ambitioncoal.com</li>
-            <li class="contact-item">📍 Ahmedabad, Gujarat, India</li>
-          </ul>
-          <a href="contact.html" class="btn btn-fill">Let's Talk →</a>
+          <div class="footer-contact">
+            <div class="contact-entry">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>+91 79 XXXX XXXX</span>
+            </div>
+            <div class="contact-entry">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>info@ambitioncoal.com</span>
+            </div>
+            <div class="contact-entry">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Ahmedabad, Gujarat, India</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top:16px">
+            Send Enquiry &rarr;
+          </a>
         </div>
+
       </div>
     </div>
+
     <div class="footer-bar">
-      <p>© 2024 Ambition Coal Pvt. Ltd. All Rights Reserved.</p>
+      <p>&copy; 2024 Ambition Coal Pvt. Ltd. All Rights Reserved.</p>
       <div class="footer-bar-links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms &amp; Conditions</a>
